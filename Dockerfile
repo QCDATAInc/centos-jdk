@@ -8,7 +8,7 @@ RUN yum install -y \
     
 RUN cd /opt
 RUN wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u40-b26/jdk-8u40-linux-x64.tar.gz"
-RUN tar xvf jdk-8u40-linux-x64.tar.gz && rm /opt/jdk-8u40-linux-x64.tar.gz
+RUN tar -xvf jdk-8u40-linux-x64.tar.gz && rm /opt/jdk-8u40-linux-x64.tar.gz
 
 RUN chown -R root: jdk1.8.0_40
 RUN alternatives --install /usr/bin/java java /opt/jdk1.8.0_40/bin/java 1
