@@ -6,10 +6,10 @@ RUN yum install -y \
     tar \
     wget
     
-RUN wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u60-b27/jdk-8u60-linux-x64.tar.gz"
-RUN tar -xvf jdk-8u60-linux-x64.tar.gz -C /opt && rm jdk-8u60-linux-x64.tar.gz
+RUN wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u65-b17/jdk-8u65-linux-x64.tar.gz"
+RUN tar -xvf jdk-8u65-linux-x64.tar.gz -C /opt && rm jdk-8u65-linux-x64.tar.gz
 
-RUN chown -R root: /opt/jdk1.8.0_60
-RUN alternatives --install /usr/bin/java java /opt/jdk1.8.0_60/bin/java 1
-RUN alternatives --install /usr/bin/javac javac /opt/jdk1.8.0_60/bin/javac 1
-RUN alternatives --install /usr/bin/jar jar /opt/jdk1.8.0_60/bin/jar 1
+RUN chown -R root: /opt/jdk1.8.0_65
+RUN alternatives --install /usr/bin/java java /opt/jdk1.8.0_65/bin/java 1
+RUN alternatives --install /usr/bin/javac javac /opt/jdk1.8.0_65/bin/javac 1
+RUN alternatives --install /usr/bin/jar jar /opt/jdk1.8.0_65/bin/jar 1
