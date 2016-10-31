@@ -2,8 +2,8 @@ FROM centos:centos7
 MAINTAINER QCData Inc <den-developers@qcdata.com>
 
 ENV JVER 8
-ENV JUPD 101
-ENV JBUILD b13
+ENV JUPD 111
+ENV JBUILD b14
 
 ENV JED ${JVER}u${JUPD}
 ENV JDK jdk1.${JVER}.0_${JUPD}
